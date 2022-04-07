@@ -1,0 +1,28 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <raggiungibilitaSepaListRequest xmlns="http://schema.lettura.trust.ws.popso.it/v2">
+            <testata>
+                <idOperazione xmlns="http://schema.common.testata.ws.popso.it/v4">
+                    <codiceApplicazioneChiamante>GEOWEB</codiceApplicazioneChiamante>
+                    <codiceOperazione>O301020180436217</codiceOperazione>
+                </idOperazione>
+                <idConversazione xmlns="http://schema.common.testata.ws.popso.it/v4">C301020180436217</idConversazione>
+                <canale xmlns="http://schema.common.testata.ws.popso.it/v4">ITN</canale>
+                <codiceIstituto xmlns="http://schema.common.testata.ws.popso.it/v4">05696</codiceIstituto>
+                <codiceFiliale xsi:nil="true" xmlns="http://schema.common.testata.ws.popso.it/v4"/>
+                <codiceContabile xsi:nil="true" xmlns="http://schema.common.testata.ws.popso.it/v4"/>
+                <matricolaOperatore xsi:nil="true" xmlns="http://schema.common.testata.ws.popso.it/v4"/>
+                <ndgCliente xsi:nil="true" xmlns="http://schema.common.testata.ws.popso.it/v4"/>
+                <numeroRapporto xsi:nil="true" xmlns="http://schema.common.testata.ws.popso.it/v4"/>
+            </testata>
+            <raggiungibilitaSepaListRequestData>
+                <dataRegolamento xsi:nil="true"/>
+                <aderente>
+                    <iban>IT53J0200838941000400534527</iban>
+                </aderente>
+                <servizioSepa>SDD_COR</servizioSepa>
+            </raggiungibilitaSepaListRequestData>
+        </raggiungibilitaSepaListRequest>
+    </soap:Body>
+</soap:Envelope>
