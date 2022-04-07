@@ -36,7 +36,7 @@ class TestController extends Controller
             ->timeout(10)
             ->connectTimeout(3)
             ->withBody($request->getContent(),'application/xml')
-            ->post('http://wpsdev.popso.it:9090/');
+            ->post('http://URL:9090/');
 
         $response->onError(function (){
            // check different errors here
